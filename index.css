@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+}
+
+.navbar .nav-icons img {
+    height: 20px;
+    margin-left: 40px;
+}
+
+.navbar .logo img {
+    height: 20px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 40px;
+    font-size: 15px;
+}
+
+.offer {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+}
+
+.offer a {
+    color: blue;
+}
+
+.back-video video {
+    width: 100%;
+    /* height: 80vh; */
+}
+
+.services img {
+    height: 30px;
+    border-radius: 50%;
+    width: 30px;
+}
+
+.services a {
+    color: blue;
+}
+
+.section {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 40px;
+    background-color: rgba(0, 0, 0, 0.095);
+    margin-top: 30px;
+    /* align-items: center; */
+}
+
+.tittle h1 {
+    font-size: 40px;
+}
+
+.products {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.095);
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.product:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+.product img {
+    height: 90px;
+}
+
+.product a {
+    text-decoration: none;
+    color: black;
+    margin-top: 20px;
+}
+
+/* .product a:hover {
+    text-decoration: underline;
+} */
+
+.card-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    height: 470px;
+    width: 365px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 30px;
+    margin-top: 40px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.7s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.card img {
+    height: 220px;
+}
+
+.card h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 20px;
+}
+
+.apple-events-img img {
+    height: 400px;
+}
+
+.apple-events-img {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.apple-events {
+    background-color: black;
+    margin-top: 100px;
+    padding: 50px;
+}
+
+.apple-events h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.section-2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.section-2 h1 {
+    font-size: 38x;
+}
+
+.section-2 img {
+    height: 650px;
+}
+
+.store {
+    display: flex;
+    margin-left: 5rem;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    font-size: 15px;
+}
+
+.store img {
+    height: 22px;
+}
+
+.store p {
+    margin-left: 10px;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.menu-list ul li {
+    list-style: none;
+    font-size: 14px;
+    cursor: pointer;
+    color: #666669;
+}
+
+.menu-list ul li:hover {
+    text-decoration: underline;
+}
+
+.menu-items {
+    background-color: rgba(0, 0, 0, 0.095);
+}
+
+.footer {
+    text-align: center;
+    color: #666669;
+    font-size: 14px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
+@media only screen and (max-width:600px) {
+    .navbar ul {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+        position: absolute;
+        background-color: white;
+        opacity: 0%;
+        height: 90vh;
+        width: 100%;
+        transition: 0.6s;
+    }
+
+    .navbar ul li {
+        padding-top: 30px;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 4%;
+        top: 25%;
+        height: 25px;
+    }
+
+    .close {
+        display: block;
+        position: absolute;
+        right: 4%;
+        height: 25px;
+    }
+
+    .offer p {
+        font-size: 12px;
+        margin: 20px 0;
+        padding: 0 6px;
+    }
+
+    .offer a {
+        font-size: 13px;
+    }
+
+    .products{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .product{
+        margin: 10px;
+    }
+
+    #airpods{
+        display: none;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .tittle h1 {
+        font-size: 30px;
+    }
+
+    .services {
+        margin-top: 20px;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .apple-events {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .apple-events-img {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .apple-events-img img {
+        height: auto;
+        width: 100%;
+    }
+
+    .section-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-2 h1{
+        font-size: 25px;
+        margin: 20px;
+    }
+
+    .section-2 img{
+        height: auto;
+        width: 100%;
+    }
+
+    .store{
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        text-align: center;
+        /* left: 5px; */
+    }
+
+    .menu-list ul li{
+        font-size: 12px;
+    }
+
+    .menu-items ul{
+        padding: 10px;
+    }
+
+    .footer{
+        font-size: 14px;
+        padding: 7px;
+        margin-top: 10px;
+        /* text-decoration: overline; */
+    }
+}
